@@ -1,0 +1,28 @@
+选择题：
+  1.A  2.AC 3.D 4.B 5.A
+
+简答题
+1：计算机发展的三条主线
+多道程序批处理操作系统；
+分时系统；
+实时事务系统；
+
+2：Java源代码经过编译，生成字节码文件，交由Java虚拟机来执行，不同得系统有不同得JVM,借助JVM实现跨平台。
+
+3：JDK : Java Development ToolKit(Java开发工具包)。JDK是整个JAVA的核心，包括了Java运行环境（Java Runtime Envirnment），
+              一堆Java工具（javac/java/jdb等）和Java基础的类库（即Java API 包括rt.jar）
+     JRE：Java  Runtime  Enviromental(java运行时环境)。也就是我们说的JAVA平台，所有的Java程序都要在JRE下才能运行。包括JVM和JAVA核心类库和支持文件。
+             与JDK相比，它不包含开发工具——编译器、调试器和其它工具。
+    JVM：Java Virtual Mechinal(JAVA虚拟机)。JVM是JRE的一部分，它是一个虚构出来的计算机，是通过在实际的计算机上仿真模拟各种计算机功能来实现的。
+              JVM有自己完善的硬件架构，如处理器、堆栈、寄存器等，还具有相应的指令系统。JVM 的主要工作是解释自己的指令集（即字节码）并映射到本地的 CPU 的指令集或 OS 的系统调用。
+              Java语言是跨平台运行的，其实就是不同的操作系统，使用不同的JVM映射规则，让其与操作系统无关，完成了跨平台性。
+              JVM 对上层的 Java 源文件是不关心的，它关注的只是由源文件生成的类文件（ class file）。类文件的组成包括 JVM 指令集，符号表以及一些补助信息。
+
+4：开发与运行Java程序的过程主要有三步；编辑源程序、编译生成字节码 和 解释运行字节码。
+
+5：设置PATH环境变量的目的就是为操作系统指定寻找工具程序的目录。如果设置PATH变量是为了让操作系统找到指定的工具程序，
+      那么设置CLASSPATH变量的目的就是让Java执行环境找到指定的Java程序对应的class文件以及程序中引用的其他class文件。
+      jdk的环境配置：
+                   步骤：1，先在我的电脑里打开高级系统设置，然后点击“环境变量"；
+                             2，点击环境变量的path，添加新建，将java文件jdk,jre中的bin文件路径添加到path里；
+                             3，在path的同级框中新建一个JAVA_HOME。
