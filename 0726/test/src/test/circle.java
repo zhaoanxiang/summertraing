@@ -12,11 +12,11 @@ public class circle {
 		
 	}
 	public void getArea() {
-		System.out.println("Ãæ»ıÎª£º"+Math.PI*r*r);
+		System.out.println("åœ†çš„é¢ç§¯ä¸ºï¼š"+Math.PI*r*r);
 		
 	}
 	public void getPerimete() {
-		System.out.println("ÖÜ³¤Îª£º"+Math.PI*r*2);
+		System.out.println("åœ†çš„å‘¨é•¿ä¸º"+Math.PI*r*2);
 	}
 
 }
