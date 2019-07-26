@@ -12,7 +12,7 @@ public class person {
 		 public person() {
 		}
 		 public void display() {
-			 System.out.println("ÄêÁä:"+age+"  "+"Ãû×Ö:"+name);
+			 System.out.println("å¹´é¾„ä¸º:"+age+"  "+"å§“å:"+name);
 		 }
 		public static void main(String[] args) {
 			person person=new person(23,"zhaoanxiang");
