@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src=js1.js> </script>
+    <script type="text/javascript">
+    //alert("hello");
+    //alert(new Date().toLocaleDateString());
+    //var i=0;
+    //i="adasd";
+    //alert(i);
+
+   /*  function add(i1,i2){
+           if(i1>i2){
+               return i1+i2; 
+           }
+    }
+           var i3= add(5,4);
+           alert(i3);
+           var i4=add(2,4);
+           alert(i4);
+ */
+   function person(name,age){
+       this.name=name;
+       this.age=age;
+       this.sayhello=function(){
+           alert("你好，我是"+this.name+"我今年"+this.age+"了");
+       }
+   }
+
+     var p1=new person("zhaoanxiang",23);
+     p1.sayhello();
+
+     // var r=2; 
+     //var pi=3.1415926;
+     //alert(pi*r*r);
+
+      function btn(){
+          var r=document.getElementById("txt");
+          var s=r.value*r.value*3.14;
+          alert(s);
+      }
+
+
+    </script>
+</head>
+<body>
+    
+    <input type="text" id="txt" />
+    <input type="button" onclick="btn()" value="求值"/>
+    <a href="http://www.sina.cn">新浪</a>
+</body>
+</html>
