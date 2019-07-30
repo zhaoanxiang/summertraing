@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>0123456789</title>
+    <script type="text/javascript" >
+        function turnleft() {
+            var title = document.title;
+            var firstch = title.charAt(0);
+            var leftstr = title.substring(1, title.length);
+            document.title = leftstr + firstch;
+        }
+        var intervalId;
+        var intervalId1;
+        function startInterval() {
+            
+            intervalId = setInterval("turnleft()", 500);
+        }
+
+            function turnright(){
+                var title = document.title;  
+                var firstch = title.charAt(title.length-1);
+                var leftstr = title.substring(0, title.length-1);
+                document.title = firstch+leftstr;
+            }
+            function startInterval1() {
+                intervalId1 = setInterval("turnright()", 500);
+            }
+    </script>
+</head>
+<body>
+    <input type="button"  value="向左" onclick="startInterval(),clearInterval(intervalId1)"/>
+    <input type="button"  value="停止" onclick="clearInterval(intervalId1), clearInterval(intervalId)" />
+    <input type="button"  value="向右" onclick="startInterval1(), clearInterval(intervalId)"/>
+    <!--需要用clearinterval()来清除上一次操作留下来的setinterval-->
+</body>
+</html>

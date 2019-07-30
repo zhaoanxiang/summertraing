@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    function btn1(){
+        var t1=document.getElementsByName("gender");
+        for(var i=0;i<t1.length;i++){
+            alert(t1[i].value);
+        }
+
+    } 
+
+     function btn2(){
+        var inputs=document.getElementsByTagName("input");
+        for(var i=0;1<inputs.length;i++){
+            inputs[i].value="一键赋值，厉害";
+        }
+    }
+    </script>
+</head>
+<body>
+    <input type="radio" value="男" name="gender"/>男
+    <input type="radio" value="女" name="gender"/>女
+     <input type="radio" value="none" name="gender"/>未知
+     <input type="text" value="11">
+      <input type="button" value="click" onclick="btn1()"/>
+      <input type="button" value="click2" onclick="btn2()"/>
+
+</body>
+</html>
