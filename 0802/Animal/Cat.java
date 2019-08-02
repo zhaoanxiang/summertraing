@@ -1,0 +1,23 @@
+package Animal;
+
+public class Cat extends Animal implements see, shu {
+
+	@Override
+	public void shangshu() {
+		System.out.println("…œ ˜");
+
+	}
+
+	@Override
+	public void seedoor() {
+		System.out.println("ø¥√≈");
+
+	}
+
+	@Override
+	public void eat() {
+		System.out.println("≥‘√®¡∏");
+
+	}
+
+}
